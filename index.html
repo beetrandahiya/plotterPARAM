@@ -1,0 +1,31 @@
+<html>
+
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <link rel="stylesheet" href="plotterPARAM.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.0.0/math.js"></script>
+  </head>
+
+  <body>
+
+    <div>
+      <div id="control">
+        <div>x = <input type="text" id="inputfuncx"></div><br>
+        <div>y = <input type="text" id="inputfuncy"></div>
+        <div id="dmndiv"><input type="text" id="dmnstart"> ≤ t ≤ <input type="text" id="dmnend"></div>
+
+
+        <button onClick="plotgraph()" id="plotbtn">Plot</button>
+
+
+        <div id="plotarea"></div>
+      </div>
+
+
+      <script src="plotterPARAM.js"></script>
+    </div>
+  </body>
+
+</html>
